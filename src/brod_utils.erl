@@ -408,6 +408,8 @@ get_sasl_opt(Config) ->
     {callback, Module, Args} ->
       %% Module should implement kpro_auth_backend behaviour
       {callback, Module, Args};
+    {Mechanism, Function} when is_function(Function) -> % Mechanism --> oauthbearer
+      {Mechanism, Function};
     {Mechanism, File} when is_list(File) orelse is_binary(File) ->
       {User, Pass} = read_sasl_file(File),
       {Mechanism, User, Pass};
