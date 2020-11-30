@@ -1,5 +1,9 @@
 {"1.2.0",
 [{<<"crc32cer">>,{pkg,<<"crc32cer">>,<<"0.1.4">>},1},
+ {<<"kafka_protocol">>,
+  {git,"git@github.com:apuratepp/kafka_protocol.git",
+       {ref,"877e0bb489193eccc55978e3d88b0eb6ca0cf39e"}},
+  0},
  {<<"snappyer">>,{pkg,<<"snappyer">>,<<"1.2.5">>},1},
  {<<"supervisor3">>,{pkg,<<"supervisor3">>,<<"1.1.11">>},0}]}.
 [
